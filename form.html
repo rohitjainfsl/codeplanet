@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML Form</title>
+	</head>
+	<body>
+		<!-- Empty tags: which do not have closing partner. Ex: br, hr, input, img -->
+		<!-- form[input, radio, checkbox, select, textarea, submit, reset] -->
+
+		<!-- <input type="text">
+			<input type="password">
+			<input type="radio">
+			<input type="checkbox">
+			<input type="button">
+			<input type="submit">
+			<input type="reset"> -->
+
+		<form autocomplete="off" novalidate>
+			
+
+			<label>Name</label>	<input type="text" placeholder="Enter your name" name="name" required autofocus> <br>
+			<label>Email</label> <input type="email" placeholder="Enter a valid email" name="email"> <br>
+			<label>Father's Name</label> <input type="text" placeholder="Enter your father's name" name="fname"> <br>
+
+			<label>Phone</label> <input type="number" max="" min="" step="" placeholder="enter your phone number" name="phone"><br>
+
+			<label>Age</label> <input type="number" max="99" min="18" step="2" placeholder="enter your age" name="age"><br>
+
+			<label>Range</label> <input type="range" min="1000" max="10000" step="1000"> <br>
+
+			<label>Color</label> <input type="color"> <br>
+
+			<label>D.O.B</label> <input type="date" name="dob"> <br>
+
+			<label>Gender</label> 
+				<input type="radio" value="male" name="gender"> Male
+				<input type="radio" value="female" name="gender">Female 
+				<input type="radio" value="other" name="gender">Other 
+			 <br>
+
+			 <label>Hobbies</label>
+			 <input type="checkbox" value="sleeping" name="hobbies">Sleeping
+			 <input type="checkbox" value="eating" name="hobbies">Eating
+			 <input type="checkbox" value="singing" name="hobbies">Singing
+			 <input type="checkbox" value="dancing" name="hobbies">Dancing
+			 <input type="checkbox" value="swimming" name="hobbies">Swimming
+			 <br>
+
+			 
+			 <label>Hometown</label>
+			 <input type="text" placeholder="Enter your hometown" name="hometown" list="hometown">
+			 <datalist id="hometown">
+			 	<option value="jaipur">Jaipur</option>
+			 	<option value="jodhpur">Jodhpur</option>
+			 	<option value="kota">Kota</option>
+			 	<option value="udaipur">Udaipur</option>
+			 	<option value="pali">Pali</option>
+			 	<option value="bikaner">Bikaner</option>
+			 </datalist>
+			 <br>
+
+			 <label>Address</label>	
+			 <textarea placeholder="Enter your address" cols="30" rows="8" name="address"></textarea> <br>
+
+			 <label>Photo</label>
+			 <input type="file" name="photo"> <br>
+
+			 <input type="submit" value="Register" name="register">
+			 <input type="reset" value="Clear" name="clear">
+			 
+		</form>
+
+
+		<!-- <label>Hometown</label>
+			 <select>
+			 	<option value="jaipur">Jaipur</option>
+			 	<option value="jodhpur">Jodhpur</option>
+			 	<option value="kota">Kota</option>
+			 	<option value="udaipur">Udaipur</option>
+			 	<option value="pali">Pali</option>
+			 	<option value="bikaner">Bikaner</option>
+			 </select><br> -->
+
+		<!-- ASSIGNMENT: input type=month, tel -->
+
+
+
+	</body>
+</html>
