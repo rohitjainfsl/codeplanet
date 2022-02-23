@@ -1,0 +1,74 @@
+/*background-color
+background-image
+background-repeat:  repeat | no-repeat | repeat-x | repeat-y;
+background-attachment:  scroll | fixed;
+background-position
+background-size (introduced in CSS 3): cover | contain | % | px
+
+Shorthand(shortcut)
+*/
+
+/*Backgrounds can be applied to whole pages as well as to individual elements*/
+
+body{
+	/*background-color: rgb(255,0,0);
+	background-image: url(images/back1.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+*/
+	background: rgb(255,0,0) url(images/back1.jpg) no-repeat fixed center / cover;
+
+}
+p{
+	color: #fff;
+	font-size: 16px;
+	/*font-weight: 100 | 200.... | 900;*/
+	font-weight: normal | bold;
+	/*font-family: Times New Roman;*/
+	font-family: 'Redressed', cursive; /*fallback - in case the first font doesn't work, browser will switch to the next*/
+
+	text-transform: capitalize;
+	text-align: justify;
+	text-decoration: none | underline | overline | line-through;
+	/*text-indent: ;*/
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+}
+ul{
+	/*list-style-type: gujarati;*/
+	/*list-style-image: url(images/);*/
+
+	list-style: none;
+
+
+}
+
+/*border-width
+border-style: solid | dotted | dashed | groove | inset | outset | ridge
+border-color*/
+
+div{
+/*	border-width: 5px;
+	border-style: solid;
+	border-color: #f00;*/
+	/*border: 5px solid #f00;*/
+
+
+	border: 3px #f00;
+
+}
+
+/*W3schools, MDN*/
+
+/*ASSIGNMENT: 
+1. what are rem & em?
+2. What is Flexbox?
+3. What is the difference between margin & padding?
+*/
+
+

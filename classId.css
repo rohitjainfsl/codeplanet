@@ -1,0 +1,76 @@
+/*p{
+	color: red;
+	font-size: 2rem;
+}
+#green{
+	color: green;
+}
+
+.green{
+	color: green;
+}
+
+.big{
+	font-size: 3rem;
+}*/
+
+
+/*ID > class > tag*/
+
+/*In case of multiple classes, CSS follows the Rule: LIFO*/
+
+
+
+p{
+	color: red;
+}
+
+
+/*#p1{
+	color: green;
+}*/
+
+
+.paraone{
+	color: brown;
+}
+.para1{
+	color: gold;
+}
+.firstpara{
+	color: purple;
+}
+
+
+
+
+/*Hexadecimal Value:
+Allowed chars: 0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f
+Starts with a #
+Followed by either 3 or 6 chars*/
+
+/*
+Black - #000000 - #000
+White - #ffffff - #fff
+Red - #ff0000 - #f00
+Blue - #0000ff - #00f
+Green - #00ff00 - #0f0
+*/
+
+/*Which color shade is this?
+#336699
+Choices: Red, Green or Blue*/
+
+
+
+/*
+RGB value:
+Allowed chars: 0 - 255
+Starts with rgb()
+
+Black - rgb(0,0,0)
+Black - rgb(255,255,255)
+Red - rgb(255,0,0)
+Green - rgb(0,255,0)
+Blue - rgb(0,0,255)
+*/
