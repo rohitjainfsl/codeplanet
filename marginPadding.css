@@ -1,0 +1,46 @@
+/*Margin: distance between 2 elements. Distance between border of two elements*/
+
+/*Padding: distance between an element's border and its content*/
+
+/*Margin & Padding can be applied from all 4 sides. Both accept all the units of measurement*/
+
+/*Universal Selector: rules written in * are applied to each and every tag written in the HTML page*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+.para{
+	border: 3px solid black;
+}
+.p2{
+	/*margin-top: 30px;
+	margin-right: 40px;
+	margin-bottom: 50px;
+	margin-left: 20px;*/
+	/*margin: 30px 40px 50px 20px;*/ /*top right bottom left*/
+
+	/*margin: 40px 50px 20px;*/ /*top left+right bottom*/
+
+	/*margin: 50px 20px;*/ /*top+bottom right+left*/
+
+	/*margin: 30px;*/ /*top+right+bottom+left*/
+
+
+	/*padding-top: 30px;
+	padding-right: 50px;
+	padding-bottom: 20px;
+	padding-left: 10px;*/
+	/*padding: 30px 50px 20px 10px;*/
+
+
+}
+
+/*Default margins & Paddings: many block elements carry their default margings and/or paddings*/
+
+/*Body has a default margin of 8px*/
+
+
+

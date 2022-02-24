@@ -2,16 +2,20 @@
 <html>
 	<head>
 		<title>Layout 1</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="layout1.css">
 	</head>
 	<body>
 		<header>
-			<div>
+			<div id="top">
 				
-				<div>
+				<div id="logo">
 					<img src="images/logo.png" alt="">
 				</div> <!-- logo -->
 
-				<nav>
+				<nav id="menu">
 					<ul>
 						<li><a href="">About Us</a></li>
 						<li><a href="">Courses</a></li>
@@ -23,17 +27,17 @@
 
 			</div>
 
-			<div>
-				<img src="images/dm13.jpg" alt=""> <!-- banner -->
+			<div id="banner">
+				<!-- Empty elements are not shown on the browser. Height/ padding has to be given to them explicitly -->
 			</div>
 		</header>
 
 		<section>
-			<div>
+			<div id="bigPara">
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quasi id temporibus ullam similique quidem ad eos accusamus, suscipit, iure cumque quia alias eum adipisci officia soluta at sed a.</p>
 			</div>
 
-			<div>
+			<div class="feature">
 				<img src="images/1.png" alt="">	
 				<div>
 					<h2>Feature 1</h2>
@@ -41,7 +45,7 @@
 				</div>				
 			</div>
 
-			<div>
+			<div class="feature">
 				<div>
 					<h2>Feature 2</h2>
 					<p>Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Aliquam, voluptates perspiciatis tenetur, mollitia, asperiores ipsum numquam ratione vero sequi, placeat beatae facilis voluptatibus commodi animi similique. Laborum qui, in corrupti?</p>
@@ -49,7 +53,7 @@
 				<img src="images/3.png" alt="">
 			</div>
 
-			<div>
+			<div class="feature">
 				<img src="images/4.png" alt="">	
 				<div>
 					<h2>Feature 3</h2>
@@ -57,7 +61,7 @@
 				</div>				
 			</div>
 
-			<div>
+			<div class="feature">
 				<div>
 					<h2>Feature 4</h2>
 					<p>Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Aliquam, voluptates perspiciatis tenetur, mollitia, asperiores ipsum numquam ratione vero sequi, placeat beatae facilis voluptatibus commodi animi similique. Laborum qui, in corrupti?</p>
@@ -69,7 +73,7 @@
 		</section>
 
 		<footer>
-			<div>
+			<div id="social">
 				<h2>Social Icons</h2>
 				<ul>
 					<li>Facebook</li>
@@ -80,7 +84,7 @@
 				</ul>
 			</div>
 
-			<div>
+			<div id="subscribe">
 				<h2>Subscribe</h2>
 				<form>
 					<input type="email" placeholder="enter email to subscribe">

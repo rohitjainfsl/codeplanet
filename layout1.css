@@ -1,8 +1,56 @@
-p{
-	color: red;
-	font-size: 2rem;
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: Poppins, Arial; /*fallback*/
+	font-weight: 400;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: 700;
+}
+#top{
+	background: #000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 70px;
+	padding: 0 3rem; /*here, 3rem is how much in px???*/
+}
+#menu ul{
+	display: flex;
+	list-style-type: none;
+}
+#menu ul a{
+	color: #fff;
+	text-decoration: none;
+	padding: 0 15px;
 }
 
-#green{
-	color: green;
+
+#banner{
+	background: url(images/dm13.jpg) no-repeat scroll center / cover;
+	height: 300px;
+}
+
+
+#bigPara{
+	padding: 3rem;
+	text-align: center;
+	font-size: 1.5rem;
+	color: #666;
+}
+
+
+.feature{
+	padding: 0 3rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.feature img{
+	width: 30%;
+}
+.feature div{
+	width: 50%;
 }

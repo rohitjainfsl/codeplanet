@@ -1,0 +1,40 @@
+/*Flexbox is used to arrange 2 or more elements. Flex can arrange them vertically and/or horizontally*/
+/*Any element can be made a 'flexbox' by using property - display*/
+/*Element on which flex is applied is called container and its children are called items*/
+
+/*To do this, float was used earlier.*/
+
+
+/*justify-content, align-items, flex-direction, flex-wrap, order*/
+/*These properties are only used on a 'container'*/
+
+/*flex-direction: defines whether the items will be placed horizontally or vertically*/
+/*flex-direction: row | column | row-reverse | column-reverse;*/
+
+/*justify-content: specifies the horizontal alignment of items 
+justify-content:  flex-start | flex-end | center | space-between | space-around | space-evenly;
+align-items: specifies the vertical alignment of items */
+/*align-items: flex-start | flex-end | center;*/
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+#parent{
+	height: 400px;
+	background: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.cricket{
+	width: 250px;
+	height: 280px;
+	color: #fff;
+	border: 1px solid;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
