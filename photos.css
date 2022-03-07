@@ -1,0 +1,27 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#photos{
+	display: flex;
+	height: 100vh; /*vh - viewport height and 100vh is 100% of viewport height*/
+	justify-content: center;
+	align-items: center;
+}
+.photo{
+	position: relative;
+	margin: 0 0.5rem;
+}
+.photo img{
+	border-radius: 50%;
+}
+.bigPhoto{
+	width: 400px;
+	height: 400px;
+}
+.smallPhoto{
+	width: 80px;
+	height: 80px;
+	position: absolute;
+}
