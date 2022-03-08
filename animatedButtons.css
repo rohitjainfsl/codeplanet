@@ -1,0 +1,156 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: #2C3E50;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+#button-wrapper{
+	margin: 0 auto;
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem 0;
+	font-family: Roboto, sans-serif;
+}
+#button-wrapper div{
+	width: 50%;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid;
+	padding: 3rem 0;
+	background: #fff;
+}
+#button-wrapper button{
+	padding: 1rem 2.5rem;
+	border: none;
+	background: #e3e3e3;
+	border-radius: 6px;
+	box-shadow: 4px 4px 1px rgba(0,0,0,0.6);
+  font-size: 1.1rem;
+	cursor: pointer;
+	transition: all 0.45s ease-in-out;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+
+#btn1{
+	color: #000;
+	overflow: visible;
+}
+
+
+#btn1:before, #btn1:after{
+	content: '';
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	z-index: -1;
+	transition: all 0.75s;
+}
+#btn1:before{
+	background: #0f0;
+	left: -100%;
+	top: 0;
+}
+#btn1:after{
+	background: #f00;
+	right: -100%;
+	top: 0;
+}
+
+#btn1:hover:before{
+	left: 0;
+}
+#btn1:hover:after{
+	right: 0;
+}
+
+
+/*box-shadow: horizontal_offset vertical_offset blur_distance spread color*/
+
+
+#btn2:before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 100%;
+	width: 100%;
+	height: 100%;
+	background: #0f0;
+	z-index: -1;
+	box-shadow: 0 0 3px 5px rgba(0,255,0,0.5);
+	transition: all 0.5s;
+}
+
+#btn2:hover:before{
+	top: 0;
+}
+
+/*To change color of text while hovering*/
+#btn2:hover{
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#btn3:before{
+	left: -15%;
+	top: -20%;
+	width: 0%;
+	height: 120%;
+	transform: rotate(10deg);
+	background: #11a428;
+	box-shadow: 1px 3px 10px 10px rgba(27, 233, 27, 0.7);
+	transition-duration: 0.75s;
+}
+#btn3:hover:before{
+	left: 115%;
+}
+
+
+#btn4:before{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	top: -60px;
+	left: -60px;
+	box-shadow: 0 0 30px 50px rgba(210, 16, 50, 0.8);	
+	z-index: -1;
+	transition-duration: 0.75s;
+}
+#btn4:hover{
+	color: #fff;
+}
+#btn4:hover:before{
+	transform: scale(4);
+}
+
+
+
+
+
+

@@ -3,6 +3,8 @@
 	padding: 0;
 }
 #gallery{
+	width: 70%;
+	margin: 0 auto;
 	height: 100vh;
 	display: flex;
 	justify-content: center;
@@ -10,7 +12,11 @@
 	flex-wrap: wrap;
 }
 #gallery img{
-	width: 23%;
+	width: 30%;
 	height: 200px;
 	margin: 10px;
+}
+
+#gallery img:hover{
+	transform: scale(1.2);
 }

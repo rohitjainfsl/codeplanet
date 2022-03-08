@@ -1,0 +1,92 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+/*Pseudo classes: classes which are not present in HTML, still are used in CSS.
+These are denoted by (:)
+:hover, :focus
+:first-of-type, :last-of-type, :first-child, :last-child, :first-line, :first-letter, :nth-of-type
+
+
+:before, :after
+:first, :last
+
+*/
+
+
+/*p{
+	color: #f00;
+}*/
+/*p:hover{
+	color: red;
+	font-size: 2rem;
+}*/
+
+
+/*input:focus{
+	
+}*/
+
+/*ul li{
+	color: red;
+}*/
+
+/*ul li:first-of-type{
+	color: pink;
+}
+ul li:last-of-type{
+	color: yellow;
+}*/
+
+/*ul li:nth-of-type(2){
+	color: blue;
+}*/
+
+
+/*ul li:nth-of-type(2n){
+	font-size: 2rem;
+}
+
+
+ul li:nth-of-type(2n+1){
+	transform: translate(40px);
+}*/
+
+
+
+/*p:first-line{
+	color: red;
+}*/
+
+
+
+/*ul li::before{
+	content: 'a';
+}
+ul li::after{
+	content: '.';
+}*/
+
+
+
+
+/*ul:first-of-type li:nth-of-type(4){
+	color: yellow;
+}*/
+
+/*ul li a:nth-of-type(2){
+	color: red;
+}*/
+
+
+/*ul li:nth-of-type(2) a{
+	color: red;
+}*/
+
+
+/*ul li:last{
+
+}*/
