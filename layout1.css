@@ -1,6 +1,15 @@
+/*Box Sizing property specifies how much area an element will occupy on the screen*/
+
+/*Dimension = width+padding+border+margin*/
+
+/*box-sizing:border-box*/
+
+/*Dimension = (width+padding+border)+margin*/
+
 *{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 body{
 	font-family: Poppins, Arial; /*fallback*/
@@ -41,12 +50,14 @@ h1,h2,h3,h4,h5,h6{
 	color: #666;
 }
 
+/*Border on Individual sides*/
 
 .feature{
-	padding: 0 3rem;
+	padding: 2rem 3rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	border-bottom: 1px solid #e3e3e3;
 }
 .feature img{
 	width: 30%;
@@ -54,3 +65,100 @@ h1,h2,h3,h4,h5,h6{
 .feature div{
 	width: 50%;
 }
+
+
+footer{
+	background: #000;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 3rem;
+}
+/*What is the property to remove markers?*/
+#social ul{
+	display: flex;
+	list-style: none;
+}
+#social ul li i{
+	font-size: 2rem;
+	border: 1px solid;
+	margin: 0 0.5rem;
+	padding: 0.25rem;
+	border-radius: 5px;
+}
+/*Attribute Selection*/
+#subscribe input{
+	padding: 0.5rem;
+	border-radius: 5px;
+}
+#subscribe input[type=email]{
+	width: 250px;
+}
+#subscribe input[type=submit]{
+	background: #f00;
+	color: #fff;
+	border: none;
+	width: 100px;
+	cursor: pointer;
+}
+#hamburger{
+	position: absolute; /* element is taken out the page flow */
+	right: 3rem;
+	display: none;
+}
+#hamburger span{
+	width: 20px;
+	height: 3px;
+	background: #fff;
+	margin: 2px 0;
+	display: block;
+}
+
+
+
+
+
+/*Media Queries are always written at the end of CSS*/
+
+@media all and (max-width: 780px){
+	footer{
+		flex-direction: column;
+	}
+	footer div{
+		width: 100%;
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+	#hamburger{
+		display: block;
+	}
+	#menu{
+		display: none;
+	}
+}
+
+@media all and (max-width: 620px){
+	.feature{
+		flex-direction: column;
+	}
+	.feature div{
+		width: 100%;
+	}
+	.feature img{
+		width: 60%;
+	}
+}
+
+@media all and (max-width: 500px){
+	#subscribe input[type="submit"]{
+		margin-top: 1rem;
+		width: 250px;
+	}
+}
+
+
+
+
+
+

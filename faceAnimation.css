@@ -1,0 +1,95 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#face{
+	width: 200px;
+	height: 200px;
+	background: #b95b87;
+	border-radius: 50%;
+	border: 1px solid #000;
+	position: relative;
+	animation-name: rotateFace;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+}
+#face div{
+	position: absolute;
+}
+#leftEyebrow, #rightEyebrow {
+	width: 35px;
+	height: 15px;
+	border-top: 1px solid #000;
+	border-radius: 50%;
+}
+#leftEyebrow {
+	top: 40px;
+	left: 34px;
+}
+#rightEyebrow {
+	top: 40px;
+	left: 120px;
+}
+#leftEye, #rightEye{
+	width: 20px;
+	height: 40px;
+	border: 1px solid #000;
+	border-radius: 50%;
+	overflow: hidden;
+}
+#leftEye {
+	top: 50px;
+	left: 41px;
+}
+#rightEye {
+	top: 50px;
+	left: 128px;
+}
+#nose {
+	width: 5px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid #000;
+	top: 100px;
+	left: 93px;
+	background: #000;
+}
+#mouth {
+	width: 60px;
+	height: 27px;
+	border-bottom: 1px solid #000;
+	border-radius: 50%;
+	top: 140px;
+	left: 66px;
+	animation: smile 1s 5s linear;
+}
+.pupil {
+	width: 20px;
+	height: 20px;
+	border: 1px solid #000;
+	border-radius: 50%;
+	background: #000;
+	bottom: -2px;
+	left: 2px;
+}
+
+
+
+@keyframes rotateFace{
+	0%{transform: rotate(0); left: 0;}
+	50%{transform: rotate(180deg); left: calc(100% - 200px);}
+	100%{transform: rotate(0); left: 0;}
+}
+
+
+@keyframes smile{
+	0%{ width: 0; left: 99px;}
+	100%{ width: 60px; left: 66px; }
+}
+
+
+
+
