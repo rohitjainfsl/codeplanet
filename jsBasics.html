@@ -7,7 +7,9 @@
 </head>
 <body>
 	<div id="wrapper">
-		
+		<h1 class="para">Heading</h1>
+
+		<p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero fuga, fugiat nisi tempore dolore, fugit. Ab deleniti praesentium eos, reprehenderit voluptate nemo, qui deserunt cumque, quis odit omnis, atque. Voluptate?</p>
 	</div>
 
 	<script>
@@ -34,15 +36,234 @@
 
 		// What is the difference between var, let & const?
 
+		// 1.var creates a global variable, whereas let creates a local(scoped) variable.
+
+
+		// function fun(){
+		// 	var a = 10;
+		// 	alert(a);
+		// }
+
+
+
+
+		// variables declared with var could be redeclared, with let they cannot.
+
+		// var a = 1; //memory is alloted
+
+
+		// var a = 2; //another memory is alloted
+
+
+		// let b = 22;
+
+		// let b = 220;
+
+
+
+		// var a = 1;
+
+		// a = 2;
+
+		// let a = 3;
+		// a = 4;
+
+		// const a = 1;
+		// a = 2;
 
 
 
 
 
 
+		// Operators: / & %
+
+		// +,-,/,/,%
+		// <,>,<=,>=, 
+		// =, ==, ===, !=, !==
+		// ++, -- 
 
 
 
+
+		let a = 10;
+		// alert('a');
+
+		// alert(a%2); //0
+
+		// alert(a === 10);
+
+		// alert('10' == a);
+
+
+		// = assignment
+
+
+
+		// == : checks only for data value 
+		// === : checks for data type as well as value
+
+		// alert(a == 10);
+
+
+		// alert(a === '10');
+
+
+		// == opposite !=
+		// === opposite !==
+
+		// alert(a !== '10');
+
+
+		// Increment(++) & Decrement(--)
+
+		//Post Increment & Decrement
+		//Pre Increment & Decrement
+
+
+		// let x = 1;
+		// alert(x++); //1
+
+		// alert(x);
+
+
+
+
+
+
+		let n = 34;
+
+		// if(n < 34){
+		// 	alert("Hi")
+		// }
+		// else{
+		// 	alert("Hello");
+		// }
+
+		// if(n%2 === 0){
+		// 	alert("n is even")
+		// }
+		// else{
+		// 	alert("n is odd")
+		// }
+
+		// if(n%2 === 0)
+		// 	alert("n is even");		
+		// else
+		// 	alert("n is odd");
+
+
+		//Ternary operator
+
+		// alert (n%2 === 0) ? ("n is even") : ("n is odd");
+
+
+		// console.log("My name is Rohit");
+
+		// console.log(n);
+
+		// document.write("My name is Rohit")
+
+		// document.write(n === 35)
+
+		// document.getElementById
+		// document.getElementsByClassName
+		// document.getElementsByTagName
+		// document.getElementsByName
+		
+
+		// HTML Manipulation by JS
+		// document.getElementById("wrapper").innerHTML = "Written by JS";
+
+		//ASSIGNMENT: textContent
+
+		// let text = document.getElementById("wrapper").innerHTML;
+
+		// console.log(text);
+
+
+
+
+		// document.getElementsByClassName("para")[2].innerHTML = "Rohit";
+
+
+
+		// console.log(document.getElementById("wrapper")) //returns a single element
+		// console.log(document.getElementsByClassName("para")) //returns a HTMLCollection (more than 1 element)
+
+
+		//We cannot apply anything directly on a collection
+
+		// document.getElementsByClassName("para")[0].innerHTML = "Rohit Jain";
+		// document.getElementsByClassName("para")[1].innerHTML = "Rohit Jain";
+
+
+
+		// document.querySelector("#wrapper")
+		// document.querySelector(".para")
+		// document.querySelector("div p")
+		// document.querySelector("div p span")
+		// document.querySelector("div p:last-of-type")
+
+		// console.log(typeof(document.querySelector(".para")));
+
+
+
+
+
+		//Write a program to check if a number is even or odd. If even check if the number is greater than 10 or not. If greater print its square, else print its cube.
+		//If the number is odd, print the number
+
+		// let n = 9;
+		// if(n%2 === 0){
+		// 	if(n > 10)
+		// 		document.write(n*n)
+		// 	else
+		// 		document.write(n*n*n)
+		// }
+		// else{
+		// 	document.write(n)
+		// }
+
+
+		// let day = "thursday";
+
+		
+
+		// if(day === "monday"){
+		// 	console.log(1);
+		// }
+		// if(day === "tuesday"){
+		// 	console.log(2);
+		// }
+		// if(day === "wednesday"){
+		// 	console.log(3);
+		// }
+
+
+
+
+
+		// switch(day){
+		// 	case "monday":
+		// 		console.log(1);
+		// 		break;
+
+		// 	case "tuesday":
+		// 		console.log(2);	
+		// 		break;
+
+		// 	case "thursday":
+		// 		console.log(4);
+		// 		break;
+
+		// 	case "sunday":
+		// 		console.log(7);	
+		// 		break;
+
+		// 	default:
+		// 		console.log("Error");
+		// }
 
 
 
