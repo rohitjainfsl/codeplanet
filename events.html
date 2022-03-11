@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS Events</title>
+</head>
+<body>
+	<div id="wrapper">
+		<button>Click Me</button>
+		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis ea adipisci cupiditate odio illum nihil, neque quae dicta porro natus molestiae, quisquam explicabo exercitationem impedit amet doloremque illo tempore quaerat.</p>
+	</div>
+	<script>
+
+		// document.querySelector("button").onclick = alert("Hello World");		
+
+		// document.querySelector("button").onclick = () => {
+		// 	alert("Hello World")
+		// }
+		// ondblclick
+
+		//onmouseover, onmouseout
+
+		//Manipulating CSS with JS
+		// document.querySelector("p").onmouseover = () => {
+		// 	document.querySelector("p").style.color = "#f00";
+		// 	document.querySelector("p").style.backgroundColor = "#000";
+		// 	document.querySelector("p").style.padding = "1rem";
+		// 	document.querySelector("p").style.borderRadius = "0.5rem";
+		// }
+
+		// document.querySelector("p").onmouseover = () => {
+		// 	document.querySelector("p").style.cssText = "color: #f00; background-color: #000; padding: 1rem; border-radius: 0.5rem";
+		// }
+
+
+		document.querySelector("p").onmouseover = (e) => {
+			e.target.style.cssText = "color: #f00; background-color: #000; padding: 1rem; border-radius: 0.5rem";
+		}
+
+
+		// document.querySelector("p").onmouseout = () => {
+		// 	document.querySelector("p").style.color = "#000";
+		// 	document.querySelector("p").style.backgroundColor = "#fff";
+		// 	document.querySelector("p").style.padding = "0";
+		// 	document.querySelector("p").style.borderRadius = "0";
+		// }
+
+		// document.querySelector("p").onmouseout = () => {
+		// 	document.querySelector("p").style.cssText = "color: #000; background-color: #fff; padding: 0; border-radius: 0";
+		// }
+
+
+		document.querySelector("p").onmouseout = (e) => {
+			e.target.style.cssText = "color: #000; background-color: #fff; padding: 0; border-radius: 0";
+		}
+
+
+
+		//ASSIGNMENT: onkeyup, onkeydown, onload, onchange, onfocus, onblur
+
+
+
+
+
+
+		// Template Literal
+		// Arrow Functions
+
+		// let n1 = "Ram";
+		// let n2 = "Shyam";
+
+		// document.write(n1+" and "+n2+" are friends");
+
+		// Backticks
+		// document.write(`${n1} and ${n2} are friends`);
+
+		// document.querySelector("button").onclick = () => {
+		// 	console.log(10+10);
+		// }
+
+		// let marks = [80, 85, 81, 90];
+		// let total = 0;
+		// marks.forEach((mark) => {
+		// 	// total = total+mark;
+		// 	total += mark;
+		// })
+		// console.log(total);
+
+
+	</script>
+</body>
+</html>

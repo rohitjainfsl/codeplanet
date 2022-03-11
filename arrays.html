@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS Arrays</title>
+</head>
+<body>
+	<div id="wrapper">
+		
+	</div>
+
+
+	<script>
+		
+		// Array: single variable having multiple values
+		// Homogenous, heterogenous
+
+		//In JS, arrays can contain values of different data types
+
+		// let name = 'Parth';
+		// name = 'Ayush';
+		// name = 'Shreyash';
+
+		// let names = array('Parth', 'Ayush', 'Shreyash');
+
+		// let names = ['Parth', 'Ayush', 'Shreyash'];
+
+		// names = [100,54,12,1, 'Parth'];
+
+		// document.write(names);
+
+
+		// let names = ['Parth', 'Ayush', 'Shreyansh', 'Shreyash'];
+
+		// document.write(names[2])
+
+		// for(let i=0;i<4;i++){
+		// 	document.write(names[i]+" ");
+		// }
+
+		// for(let i=0;i<names.length;i++){
+		// 	document.write(names[i]+" ");
+		// }
+
+		// for each element in names, execute a function
+		// names.forEach(function(name){
+		// 	document.write(name+" ");
+		// });
+
+
+
+		// let marks = [80, 85, 81, 90];
+		// let total = 0;
+		// marks.forEach(function(mark){
+		// 	// total = total+mark;
+		// 	total += mark;
+		// })
+		// console.log(total);
+
+
+		// ARRAY FUNCTIONS:
+		// toString, join
+		// push, pop
+		// shift, unshift
+		// slice, splice
+		// concat
+		// sort
+
+
+		// Higher Order Functions: reduce, map, filter
+
+
+
+		// let names = ["Ram", "Shyam", "Seeta"];
+		// names.push("Geeta", "Ramesh", "Suresh");
+		// names.pop();
+
+
+		// names.unshift("Geeta", "Ramesh", "Suresh");
+		// names.shift();
+
+
+		// document.write(names.shift())
+
+		// names.splice(1, 1, "Geeta", );
+
+		// document.write(names);
+
+		// let namesString = names.toString();
+
+		// document.write(namesString);
+		// document.write(typeof(names));
+
+		// document.write(namesString)
+
+
+
+
+		// let names = ["Ram", "Shyam", "Seeta", "Aman", "Ayush", "Gauri", "Ayushi", "Neelam"];
+		// let numbers = [200, 32, 11, 25, 34,119, 202];
+		// numbers.sort();
+		// document.write(numbers);
+
+		let numbers = [200, 32, 11, 25, 34,119, 202];
+
+		numbers.sort(function(a,b){return b-a});
+
+		document.write(numbers);
+
+
+	</script>
+</body>
+</html>
