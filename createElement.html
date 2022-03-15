@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Create Elements</title>
+</head>
+<body>
+	<div id="wrapper">
+		<input type="text" placeholder="Enter your name">
+		<button>Click Me</button>
+		
+	</div>
+
+
+	<script>
+		document.querySelector("button").onclick = () => {
+			// let input = document.querySelector("input").value;
+			// document.querySelector("p").innerHTML = input;
+
+			// document.querySelector("p").innerHTML = document.querySelector("input").value;
+
+			//creating an element via JS
+			let elem = document.createElement("p");
+
+			elem.innerHTML = document.querySelector("input").value;
+
+			document.querySelector("#wrapper").appendChild(elem);
+
+			//insertAdjacentHTML, insertBefore
+
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>setTimeout & setInterval</title>
+</head>
+<body>
+	<div id="wrapper">
+		<button>Hit Me</button>
+		<button>Save Me</button>
+	</div>
+	<script>
+		// setTimeout & setInterval are functions that are used to create delayed execution of code
+
+		// setTimeout: executes a code once after the specified delay
+		// setInterval: executes a code in a loop, each time, after the specified delay
+
+		let int;
+
+		document.querySelector("button:first-of-type").onclick = () => {
+			// alert("Rohit Jain")
+			int = setInterval(() => {
+				alert("Rohit Jain")
+			}, 2000);
+		}
+
+		document.querySelector("button:last-of-type").onclick = () => {
+			clearInterval(int);
+		}
+
+
+
+	</script>
+</body>
+</html>
