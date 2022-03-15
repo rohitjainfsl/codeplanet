@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DOM Traversing</title>
+	<style>
+		.b{
+			width: 300px;
+			border: 1px solid;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="boxes">
+			<div class="box">
+				<div class="image">
+					<img src="images/hotel1.jpg" alt="">
+				</div>
+				<div class="content">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae saepe corrupti reprehenderit dignissimos! Cumque soluta excepturi voluptates, provident error, corporis voluptatem molestias harum itaque ipsum libero magnam dignissimos velit. Quas!</p>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="image">
+					<img src="images/hotel2.jpg" alt="">
+				</div>
+				<div class="content">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae saepe corrupti reprehenderit dignissimos! Cumque soluta excepturi voluptates, provident error, corporis voluptatem molestias harum itaque ipsum libero magnam dignissimos velit. Quas!</p>
+				</div>
+
+			</div>
+
+			<div class="box">
+				<div class="image">
+					<img src="images/hotel3.jpg" alt="">
+				</div>
+				<div class="content">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae saepe corrupti reprehenderit dignissimos! Cumque soluta excepturi voluptates, provident error, corporis voluptatem molestias harum itaque ipsum libero magnam dignissimos velit. Quas!</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<script>
+		//parentElement, children, childElementCount, nextElementSibling, previousElementSibling
+
+		// console.log(document.querySelector(".content").parentElement); //box
+
+		// console.log(document.querySelector(".box").children);
+		// console.log(document.querySelector(".box").childElementCount);
+
+
+		// console.log(document.querySelector(".box").children[0]);
+
+
+		// console.log(document.querySelector(".image").nextElementSibling)
+
+
+
+
+		//classList: contains a list of classes of the selected element
+		//add, remove, toggle, contains
+
+		// document.querySelectorAll(".box").forEach((current) => {
+		// 	current.classList.remove("b");
+		// })
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>

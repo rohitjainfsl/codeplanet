@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>QuerySelectorAll</title>
+</head>
+<body>
+	<div id="wrapper">
+		<p>Ayush Kumar</p>
+		<p>Parth Bhandari</p>
+		<p>Anshishka</p>
+		<button>Click Me</button>
+	</div>
+	<script>
+
+		// console.log(document.querySelectorAll("p"));
+
+		// No property could be directly applied on collection of elements
+
+
+		document.querySelector("button").onclick = (e) => {
+			// document.querySelectorAll("p").style.cssText = "color: #f00;background: #000";
+
+
+			// document.querySelectorAll("p")[0].style.cssText = "color: #f00;background: #000";
+			// document.querySelectorAll("p")[1].style.cssText = "color: #f00;background: #000";
+			// document.querySelectorAll("p")[2].style.cssText = "color: #f00;background: #000";
+
+
+			document.querySelectorAll("p").forEach((current) => {
+				current.style.cssText = "color: #f00;background: #000";
+			})
+
+
+
+		}
+
+		// Tabs, Accordions
+
+
+	</script>
+</body>
+</html>
