@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Random Name from Array</title>
+</head>
+<body>
+	<div id="wrapper">
+		<input type="text" placeholder="Enter your friend's name">
+		<button>Add Name</button>
+	</div>
+
+	<script>
+		let names = [];
+		let usedNumbers = [];
+		let i = 0;
+		let interval = '';
+		let input = document.querySelector("input");
+		let button = document.querySelector("button");
+
+		// button.onclick = () => {}
+
+		// button.onmouseover
+
+
+		button.addEventListener("click", () => {
+			//if input empty, show error
+			if(input.value.length === 0){
+				alert("Write a name first!!");
+			}
+			else{
+				//check how many names are there in the array
+				if(names.length < 5){
+					names.push(input.value);
+					console.log(names);
+
+					input.value = "";
+					input.focus();
+				}
+				else{
+					let elem = document.createElement("p");
+					// elem.innerHTML = names[i++];
+					// document.querySelector("#wrapper").appendChild(elem);
+
+					interval = setInterval(() => {
+						elem.innerHTML = elem.innerHTML +" "+ getRandomName(i++);
+						document.querySelector("#wrapper").appendChild(elem);
+					}, 1000);
+
+
+				}
+			}
+		})
+
+		function getRandomName(i){
+			if(Number(i) === 4)
+				clearInterval(interval);
+			return names[UniqueRandomNumber()];
+		}
+
+		function UniqueRandomNumber(){
+			let randomNumber = Math.floor(Math.random() * names.length);
+			if(usedNumbers.includes(randomNumber))
+				return UniqueRandomNumber();
+			else{
+				usedNumbers.push(randomNumber);
+				return randomNumber;
+			}
+		}
+
+
+
+
+		// let questions = ["2+2", "3*3*3", "12+45", "12+34+43*0+34", "2/2"];
+		// let answers = [4,27, 57, 34, 1];
+
+
+		// Regular Expressions
+		// Form Validations
+
+		// Spread Syntax, Destructuring
+
+
+
+
+	</script>
+</body>
+</html>

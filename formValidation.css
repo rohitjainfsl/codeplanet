@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+form{
+  font-family: Noto Sans;
+  margin: 40px auto;
+  width: 1200px;
+  padding: 20px;
+  border: 1px solid #c3c3c3;
+  border-radius: 7px;
+  box-shadow: 3px 3px 3px 5px rgba(0,0,0,0.4);
+}
+input[type=text], input[type=password]{
+  margin: 10px 5px;
+  padding: 15px;
+  width: 100%;
+  border: 2px solid #369;
+  border-radius: 5px;
+  font-size: 16px;
+}
+input[type=radio], input[type=checkbox]{
+  margin: 10px 0px;
+}
+input[type=radio]:first-of-type, input[type=checkbox]:first-of-type{
+  margin-left: 20px
+}
+input[type=radio]+span, input[type=checkbox]+span{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+input[type=submit]{
+  width: 50%;
+  padding: 15px 20px;
+  border-radius: 10px;
+  background: #0047cd;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  border: 2px solid #c3c3c3;
+  cursor: pointer;
+}
