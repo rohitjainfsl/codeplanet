@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Higher Order Functions</title>
+</head>
+<body>
+	<div id="wrapper">
+		
+	</div>
+
+	<script>
+		// Higher Order Functions: functions that work on arrays and return an array.
+
+		// map, reduce, filter
+
+		// const arr = [1,2,3,4,5,6,7,8,9];
+
+		// let sum = 0;
+		// arr.forEach((current) => {
+		// 	sum += current;
+		// })
+		// console.log(sum)
+
+		// const output = arr.reduce((previous, current) => {
+		// 	return previous+current;
+		// })
+		// console.log(output);
+
+
+		let numbers = [34,56,11,131,86,45,47];
+
+		// let evenNumbers = [];
+		// numbers.forEach((current) => {
+		// 	if(current %2 === 0)
+		// 		evenNumbers.push(current)
+		// })
+		// console.log(evenNumbers)
+
+		const evenNumbers = numbers.filter((current) => {
+			return (current%2 === 0)
+		})
+		console.log(evenNumbers);
+
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>

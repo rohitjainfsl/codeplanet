@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spread Syntax & Destructuring</title>
+</head>
+<body>
+	<div id="wrapper">
+		
+	</div>
+	<script>
+
+		// function loop(){
+	 //    for(var i=1;i<=10;i++){
+	 //      i+2;
+	 //    }
+	 //    console.log(i);
+		// }
+		// loop();
+
+
+
+
+
+
+		//SPREAD SYNTAX: allows an iterable element, such as an array or object to be expanded, to be used as individual arguments or elements, or individual key value pair in case of an object.
+
+
+		// let arr1 = [1,2,3,4,5,6];
+
+		// document.write(...arr1);
+		
+
+
+
+
+		const numbersOne = [1, 2, 3];
+		const numbersTwo = [2, 3, 6];
+
+		// concat, merge
+		// const numbersCombined = numbersOne.concat(numbersTwo);
+
+		// console.log(numbersCombined);
+
+
+		// let numbersCombined = [...numbersOne, ...numbersTwo];
+		// console.log(numbersCombined);
+
+
+		// const obj1 = {
+		// 	name: 'Parth',
+		// 	email: 'parth@gmail.com',
+		// 	hobby: 'gaming'
+		// }
+		// const obj2 = {
+		// 	company: 'Mercedes',
+		// 	email: 'hello@mercedes.com',
+		// 	headquarters: 'USA'
+		// }
+		// const combined = {...obj1, ...obj2};
+		// console.log(combined);
+
+
+
+		
+
+		// DESTRUCTURING: The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.		
+
+
+		function sum(){
+			//processing
+			let arr = [10,20];
+			return arr;
+		}
+		// const output = sum();
+
+		// const num1 = output[0];
+		// const num2 = output[1];
+
+		// console.log(num1)
+		// console.log(num2)
+
+		// const [num1, num2] = sum();
+		// console.log(num1)
+		// console.log(num2)
+
+
+
+
+
+
+		const numbers = [1, 2, 3, 4, 5, 6];
+
+		// const [one, two, ...rest] = numbers;
+
+		const [one, two,, four] = numbers;
+
+		document.write(four);
+		
+
+		// document.write("<p>" + one + "</p>");
+		// document.write("<p>" + two + "</p>");
+		// document.write("<p>" + rest + "</p>");
+
+
+
+
+		const myVehicle = {
+		  brand: 'Ford',
+		  model: 'Mustang',
+		  color: 'red'
+		}
+
+		const updateMyVehicle = {
+		  type: 'car',
+		  year: 2021, 
+		  color: 'yellow'
+		}
+
+		const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle}
+
+		console.log(myUpdatedVehicle);
+
+
+
+
+
+		// let a, b, rest;
+		// [a, b] = [10, 20];
+		// console.log(a);
+		// console.log(b);
+
+
+
+
+
+
+		// [a, b, ...rest] = [10, 20, 30, 40, 50];
+
+		// console.log(rest);
+
+
+		// const x = [1, 2, 3, 4, 5];
+		// // const [y, z] = x;
+		// // console.log(y);
+		// // console.log(z);
+
+
+
+
+
+
+		
+
+
+		// const [firstElement, secondElement] = list;
+
+		// // this is quivalent to,
+		// // const firstElement = list[0];
+		// // const secondElement = list[1];
+
+
+
+
+		// const foo = ['one', 'two', 'three'];
+
+		// const [red, yellow, green] = foo;
+		// console.log(red); 
+		// console.log(yellow);
+		// console.log(green);
+
+
+
+		// let a = 1;
+		// let b = 3;
+
+		// [a, b] = [b, a];
+		// console.log(a); 
+		// console.log(b); 
+
+
+
+
+
+	</script>
+</body>
+</html>

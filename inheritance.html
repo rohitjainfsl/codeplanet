@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Inheritance in JS</title>
+</head>
+<body>
+	<div id="wrapper">
+		
+	</div>
+	<script>
+		
+		class Person{
+			constructor(name, age, course){
+				this.name = name;
+				this.age = age;
+				this.course = course;
+			}			
+		}
+
+		class Student extends Person{
+			constructor(name, age, course, rollNo, degree){
+				super(name, age, course);
+				this.rollNo = rollNo;
+				this.degree = degree;
+			}
+		}
+
+		let s1 = new Student("Rohit", 25, "Full Stack", 1234, 'M.Tech');
+		console.log(s1.rollNo);
+		console.log(s1.degree);
+
+
+
+	</script>
+</body>
+</html>

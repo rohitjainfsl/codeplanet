@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Objects in JS</title>
+</head>
+<body>
+	<div id="wrapper">
+		
+	</div>
+
+	<script>
+		// use 'strict';
+		// let person = {
+		// 	name: 'Parth',
+		// 	age: 20,
+		// 	walk(){
+		// 		return "Hello World"
+		// 	}
+		// }
+
+		// console.log(person.walk());
+
+		// console.log(person["name"]);
+
+		// const prop = "age";
+
+		// document.write(person[prop]);
+
+		// document.write(person.prop);
+
+
+
+		// const canYouWalk = person.walk;
+
+
+		// console.log(canYouWalk());
+
+
+		let student = {
+			name: 'Manish',
+			course(){
+				return this;
+			}
+		};
+		// console.log(student.course()); //Object itself
+
+		// const studentCourse = student.course;
+
+		// console.log(studentCourse()); //pointing the global object Window
+
+		//strict mode is not on by default in vanilla JS
+
+		//If it was on, line 50 would have given an error
+
+
+
+		//To have the referred variable also point to the original object, we have to bind 'this' with the original object
+
+
+		// const anotherStudent = student.course.bind(student);
+
+		// console.log(anotherStudent());
+
+
+		// document.querySelector("button").onclick = function(){
+		// 	console.log("Hello");
+		// }
+
+		// hello();
+
+
+		// const fun = () => {
+		// 	console.log("Hello World")
+		// }
+
+		// fun();
+
+
+
+		// const greeting = (name) => {
+		// 	return `Hello ${name}`
+		// }
+
+		const greeting = name => `Hello ${name}`;
+		
+
+		console.log(greeting("Shantanu"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>
