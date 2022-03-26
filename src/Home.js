@@ -1,45 +1,60 @@
 import React from 'react'
 import Header from './Header'
-import MainContent from './MainContent'
+import Section from './Section'
 
-export default class Home extends React.Component{
-
-	constructor(){
-		super();
-		this.state = {
-			name: 'Parth'
-		}
-		this.changeName = this.changeName.bind(this);
-	}
-
-	//states are immutable
-
-	changeName(){
-		this.setState({
-			name: 'Rohit'
-		})
-
-
-
-	}
-
-	//Lifecycle Method - gets invoked automatically whenever a component is rendered successfully
-	// componentDidMount(){
-	// 	this.setState({
-	// 		name: 'Rohit'
-	// 	})
-	// }
-
-
-	//Lifecycle Method - gets invoked automatically whenever a component is deleted successfully
-	// componentWillUnmount(){}
-
-	render(){
+function Home(){	
 		return(
 			<>
-				<h1>Hello {this.state.name}</h1>
-				<button onClick={this.changeName}>Click Me</button>	
+				<Header />
+				<Section 
+					carname='Model 3' 
+					tagline='Order Online for touchless delivery' 
+					leftBtnText='Custom Order' 
+					rightBtnText='Existing Inventory' 
+					bgImage='model-3.jpg'
+					arrow = {true}
+					 />
+					
+
+				<Section 
+					carname='Model S' 
+					tagline='Order Online for touchless delivery' 
+					leftBtnText='Custom Order' 
+					rightBtnText='Existing Inventory' 
+					bgImage='model-s.jpg' />
+
+				<Section 
+					carname='Model X' tagline='Order Online for touchless delivery' 
+					leftBtnText='Custom Order' 
+					rightBtnText='Existing Inventory' 
+					bgImage='model-x.jpg' />
+
+				<Section 
+					carname='Model Y' tagline='Order Online for touchless delivery' 
+					leftBtnText='Custom Order' 
+					rightBtnText='Existing Inventory' 
+					bgImage='model-y.jpg' />
+
+				<Section 
+					carname='Solar Panels' 
+					tagline='Lower Cost Solar Panels in India' 
+					leftBtnText='Order Now' 
+					rightBtnText='Learn More' 
+					bgImage='solar-panel.jpg' />
+
+				<Section 
+					carname='Solar Roof' 
+					tagline='Produce Clean Energy from your roof' 
+					leftBtnText='Order Now' 
+					rightBtnText='Learn More' 
+					bgImage='solar-roof.jpg' />
+
+				<Section 
+					carname='Accessories' 
+					leftBtnText='Order Now' 
+					bgImage='accessories.jpg' />
 			</>
-		)
-	}
+			
+		)	
 }
+export default Home

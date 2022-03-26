@@ -1,24 +1,10 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import Counter from './Counter'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Home from './Home'
 import './index.css'
 
-// JSX - mixture HTML, JS and XML
 
-// const name = 'Parth'
-
-
-// function Hello(props){
-//   // console.log(props);
-//   return(
-//     <h1>Hello {props.name}</h1>
-//   )
-// }
-
-
-
-
-
-
-
-ReactDOM.render(<Counter />, document.querySelector("#root")) 
+ReactDOM.render(
+    <Home />,
+  document.getElementById('root')
+);
