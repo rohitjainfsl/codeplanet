@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import $ from 'jquery'
 import Popper from '@popperjs/core'
 import 'bootstrap/dist/js/bootstrap.bundle.min'
@@ -8,11 +8,13 @@ import {Outlet} from 'react-router-dom'
 import Template from './Template'
 
 function Home() {
+	
 	return (
 		<div className="resumeBuilder">
 			<Sidebar />
-			<main className="mainsection">{<Outlet />}</main>
+			<main className="mainsection" >	{<Outlet />}</main>
 			<Template />
+			
 		</div>
 	)
 }

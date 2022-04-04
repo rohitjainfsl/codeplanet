@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-function Sidebar() {
+function Sidebar(props) {
 	return (
 		<aside className="sidebar">
 			<h1 className="projectName">Resume Builder</h1>
